@@ -1,6 +1,6 @@
 package com.example.githubtask.model
 
-data class RepositoryItem(
+data class Repository(
     val id: Int,
     val name: String,
     val description: String,
@@ -8,5 +8,5 @@ data class RepositoryItem(
     val created_at: String,
     val forks: Int,
     val stargazers_count: Int,
-    val owner: List<User>,
+    val owner: User,
 )

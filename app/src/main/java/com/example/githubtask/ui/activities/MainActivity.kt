@@ -1,9 +1,11 @@
-package com.example.githubtask
+package com.example.githubtask.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.ViewModelProvider
 import com.example.githubtask.adapter.ViewPagerAdapter
 import com.example.githubtask.databinding.ActivityMainBinding
+import com.example.githubtask.viewmodel.SharedViewModel
 import com.google.android.material.tabs.TabLayoutMediator
 
 
@@ -13,8 +15,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
+
 
         val adapter = ViewPagerAdapter(supportFragmentManager,lifecycle)
         binding.viewPager.adapter = adapter
@@ -34,4 +36,7 @@ class MainActivity : AppCompatActivity() {
             }
         }.attach()
     }
+
+
+
 }

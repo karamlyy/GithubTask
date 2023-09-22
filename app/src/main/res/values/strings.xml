@@ -2,4 +2,8 @@
     <string name="app_name">GithubTask</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dayRepos">Last Day\'s Trending Repositories</string>
+    <string name="weekRepos">Last Week\'s Trending Repositories</string>
+    <string name="monthRepos">Last Month\'s Trending Repositories</string>
+
 </resources>
