@@ -3,13 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#83A2BA"
+    android:layout_marginTop="10dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/user_avatar"
         android:layout_width="96dp"
         android:layout_height="96dp"
         android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
